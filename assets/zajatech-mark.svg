@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-labelledby="t">
+  <title id="t">ZajaTech Solutions mark</title>
+  <!-- Editable: colors are navy #0B1F3A, teal #0E8C92, gold #D9A62E -->
+  <rect id="z-top" x="18" y="18" width="84" height="18" rx="3" fill="#0E8C92"/>
+  <rect id="z-bottom" x="18" y="84" width="84" height="18" rx="3" fill="#0E8C92"/>
+  <polygon id="z-diagonal" points="70,36 102,36 50,84 18,84" fill="#0B1F3A"/>
+  <circle id="z-node" cx="60" cy="60" r="9" fill="#D9A62E" stroke="#FFFFFF" stroke-width="3"/>
+</svg>

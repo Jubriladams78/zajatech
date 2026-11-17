@@ -1,68 +1,33 @@
-# NorthStar Cloud & Network Solutions website
+# ZajaTech Solutions website
 
-A small static website: plain HTML and one CSS file, with no build step, no scripts, no trackers, and no contact form. The planned address is `northstar.jubriladams.com` (see the `CNAME` file).
-
-This branch is a draft for review. It has not been deployed.
+Static website (HTML and CSS, no JavaScript, no forms, no trackers) for ZajaTech Solutions.
 
 ## Files
-
-| File | Purpose |
-| --- | --- |
-| `index.html` | Home |
-| `services.html` | Services, who NorthStar serves, service area, scope and fees statement |
-| `about.html` | Purpose, principles, how requests are handled, customers and capacity |
-| `approach.html` | Working method, skills and training, learning labs |
-| `contact.html` | Current contact method (call and WhatsApp, same number) |
-| `styles.css` | Shared styles, light and dark mode |
-| `assets/` | Logo files (`northstar-logo.svg`, `northstar-mark.svg`) |
-| `robots.txt`, `sitemap.xml` | Search engine files for the planned address |
-| `CNAME` | Existing file naming the planned custom domain |
+- `index.html`, `services.html`, `about.html`, `approach.html`, `contact.html`: the five pages
+- `styles.css`: all styling (navy, teal, gold; light and dark mode)
+- `assets/zajatech-mark.svg`: the Z mark used in the header (editable SVG)
+- `assets/zajatech-logo.svg`: full logo lockup used on the home page (editable SVG)
+- `assets/zajatech-favicon.svg`: browser tab icon
+- `robots.txt`
+- `CNAME`: custom domain file for GitHub Pages. It still holds the old `northstar.jubriladams.com` value on purpose. Do not edit it until zajatech.com is ready.
 
 ## Preview locally
+Open `index.html` in a browser, or run `python3 -m http.server 8000` and visit http://localhost:8000.
 
-1. Download or clone this branch.
-2. Open `index.html` in a browser. All links are relative, so the pages work straight from the folder.
-3. Or run a local server from the folder: `python3 -m http.server 8000`, then visit `http://localhost:8000`.
+## Deployment
+Unchanged. This work lives on the `site-update` branch. Nothing deploys until it is merged into `main`.
 
-## Deploy (do these only when you are ready)
+## Connecting zajatech.com (not done yet)
+1. Buy or confirm ownership of zajatech.com.
+2. At the DNS provider, add the GitHub Pages records: A records 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153; optional AAAA records 2606:50c0:8000::153 through 2606:50c0:8003::153; and a CNAME for `www` pointing to `Jubriladams78.github.io`. Use DNS only (not proxied) while GitHub issues the certificate.
+3. Change the `CNAME` file to `zajatech.com`, merge `site-update` into `main`, and set the custom domain under Settings, Pages.
+4. Turn on Enforce HTTPS once the certificate is issued.
+5. Then add canonical and og:url tags and a sitemap, which were left out because the domain is not live.
+6. Remove the old northstar.jubriladams.com DNS record.
+7. Optional: rename this repository from `northstar` to match the new brand.
 
-1. Review the confirmation list below.
-2. Merge the `site-update` branch into `main`. Note that if GitHub Pages is already set to deploy from `main`, merging publishes the site.
-3. In the repository, open Settings, then Pages. Set Source to "Deploy from a branch", branch `main`, folder `/ (root)`.
-4. Confirm the custom domain `northstar.jubriladams.com` is set, then tick Enforce HTTPS once the certificate is ready.
-5. In DNS, add a `CNAME` record for `northstar` pointing to `Jubriladams78.github.io`. Do this only when you decide to go live.
+## Details still to confirm (not shown on the site)
+Hours, pricing approach, response times and guarantees, supported systems and limits, contractor screening, a business email address, a separate business phone, and customer evidence.
 
-## How to edit
-
-Edit the HTML files directly. Service status labels ("Offered") are on `services.html` and on the cards in `index.html`. Customer types, the remote statement, and the staffing and capacity wording are on `services.html`, `about.html`, and `contact.html`.
-
-## Confirmed details this site now reflects
-
-- Customers: households, small businesses, and larger companies seeking IT contractors.
-- Remote services worldwide, based in the Greater Chicago Area.
-- All six service areas are labeled Offered.
-- Capacity wording: NorthStar can bring in additional IT professionals as needed for larger projects. No team size, permanent staff, or subcontracting arrangement is stated.
-- Contact: one phone number, usable for calls and WhatsApp.
-
-## Still awaiting your confirmation
-
-None of these appear on the site. Each is left out until you confirm it.
-
-- In-person availability, and in which locations. Nothing about on-site visits is stated.
-- Business hours.
-- Pricing approach and rates. The site says only that scope, timing, and fees are discussed and agreed before work begins.
-- Response times, emergency coverage, guarantees, or service commitments.
-- Supported systems and any limits on what each service covers.
-- Contractor availability and screening practices.
-- A business email address. None is shown. Add one to `contact.html` only after you confirm it.
-- Whether to keep a phone number as the contact method, or add a separate business number later. The site calls the number a current contact method and does not describe it as a separate business line.
-- Whether to keep the planned address, which contains a personal name and so links the brand to the owner's domain.
-- Any customer evidence you want shown (such as completed paid projects). Until you supply it, the site claims no paid client work, results, testimonials, or years of experience, and labels coursework, certifications, bootcamp exercises, and home labs as training and learning examples.
-
-## Privacy and accuracy rules this site follows
-
-- No personal email, home address, résumé, LinkedIn, or personal GitHub profile.
-- The only personal details shown are the contact phone number and "Based in the Greater Chicago Area".
-- Coursework, simulations, bootcamp work, and home labs are labeled as learning examples, never as client work.
-- No testimonials, client logos, case studies, guarantees, response times, partnerships, years of experience, or registration details.
-- A warning on the Services and Contact pages tells visitors not to send passwords, account numbers, or private files in a first message.
+## Privacy rules
+No personal name, home address, personal email, résumé, LinkedIn, or personal GitHub on the site. Labs are learning examples, never client work.
