@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="title desc">
+  <title id="title">NorthStar Cloud &amp; Network Solutions</title>
+  <desc id="desc">A blue geometric N with a gold north star, above the NorthStar Cloud &amp; Network Solutions wordmark.</desc>
+  <rect width="1200" height="600" fill="#FFFFFF"/>
+  <g transform="translate(0 6)">
+    <path d="M475 72h94l156 194V72h94v300h-94L569 178v194h-94z" fill="#1677B8"/>
+    <path d="M784 37l11 28 29 11-29 11-11 29-11-29-29-11 29-11z" fill="#D9A62E"/>
+  </g>
+  <text x="600" y="474" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="78" font-weight="700" letter-spacing="-2" fill="#0B1F3A">NorthStar</text>
+  <line x1="380" y1="505" x2="820" y2="505" stroke="#D9A62E" stroke-width="3"/>
+  <text x="600" y="551" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="500" letter-spacing="2" fill="#0B1F3A">CLOUD &amp; NETWORK SOLUTIONS</text>
+</svg>
