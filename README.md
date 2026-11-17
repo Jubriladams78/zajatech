@@ -9,8 +9,8 @@ This branch is a draft for review. It has not been deployed.
 | File | Purpose |
 | --- | --- |
 | `index.html` | Home |
-| `services.html` | Services, planned or offered status, scope and fees statement |
-| `about.html` | Purpose, principles, how requests are handled |
+| `services.html` | Services, who NorthStar serves, service area, scope and fees statement |
+| `about.html` | Purpose, principles, how requests are handled, customers and capacity |
 | `approach.html` | Working method, skills and training, learning labs |
 | `contact.html` | Current contact method (call and WhatsApp, same number) |
 | `styles.css` | Shared styles, light and dark mode |
@@ -26,7 +26,7 @@ This branch is a draft for review. It has not been deployed.
 
 ## Deploy (do these only when you are ready)
 
-1. Review the confirmation list below and confirm or leave out each item.
+1. Review the confirmation list below.
 2. Merge the `site-update` branch into `main`. Note that if GitHub Pages is already set to deploy from `main`, merging publishes the site.
 3. In the repository, open Settings, then Pages. Set Source to "Deploy from a branch", branch `main`, folder `/ (root)`.
 4. Confirm the custom domain `northstar.jubriladams.com` is set, then tick Enforce HTTPS once the certificate is ready.
@@ -34,22 +34,30 @@ This branch is a draft for review. It has not been deployed.
 
 ## How to edit
 
-Edit the HTML files directly. To mark a planned service as offered, change its `Planned` label to `Offered` on `services.html` and on its card in `index.html`, and change the "Planned focus" heading in its section on `services.html` to "What this includes". Also revisit the Home page introduction and the page descriptions, which currently say IT support and troubleshooting is the only current offering.
+Edit the HTML files directly. Service status labels ("Offered") are on `services.html` and on the cards in `index.html`. Customer types, the remote statement, and the staffing and capacity wording are on `services.html`, `about.html`, and `contact.html`.
 
-To add customer types or a remote support statement after you confirm them, add a short section to `services.html`. Nothing about either is published now.
+## Confirmed details this site now reflects
+
+- Customers: households, small businesses, and larger companies seeking IT contractors.
+- Remote services worldwide, based in the Greater Chicago Area.
+- All six service areas are labeled Offered.
+- Capacity wording: NorthStar can bring in additional IT professionals as needed for larger projects. No team size, permanent staff, or subcontracting arrangement is stated.
+- Contact: one phone number, usable for calls and WhatsApp.
 
 ## Still awaiting your confirmation
 
 None of these appear on the site. Each is left out until you confirm it.
 
-- Customer types (the audience).
-- Remote support availability.
-- Which planned services are ready to offer: network setup and support, Azure and AWS cloud support, Linux and Windows system administration, Linux server administration, Windows Server and identity administration.
+- In-person availability, and in which locations. Nothing about on-site visits is stated.
 - Business hours.
 - Pricing approach and rates. The site says only that scope, timing, and fees are discussed and agreed before work begins.
-- Any guarantees, response times, supported systems, or emergency coverage.
-- Whether to keep a phone number as the contact method, or add a separate business number or email later. The site calls the number a current contact method and does not describe it as a separate business line.
+- Response times, emergency coverage, guarantees, or service commitments.
+- Supported systems and any limits on what each service covers.
+- Contractor availability and screening practices.
+- A business email address. None is shown. Add one to `contact.html` only after you confirm it.
+- Whether to keep a phone number as the contact method, or add a separate business number later. The site calls the number a current contact method and does not describe it as a separate business line.
 - Whether to keep the planned address, which contains a personal name and so links the brand to the owner's domain.
+- Any customer evidence you want shown (such as completed paid projects). Until you supply it, the site claims no paid client work, results, testimonials, or years of experience, and labels coursework, certifications, bootcamp exercises, and home labs as training and learning examples.
 
 ## Privacy and accuracy rules this site follows
 
